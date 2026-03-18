@@ -6,7 +6,7 @@
 + Rule의 개수는 10만개 이상을 지원 <br>
 + 일치하는 Rule이 있을 경우 S/DNAT(SNAT, DNAT), DROP, Accept 기능을 수행하고 패킷을 포워딩 <br>
 
-  
+  <br><br>
 # 2. 네트워크 구성도
 네트워크 구성도는 다음과 같다.
 
