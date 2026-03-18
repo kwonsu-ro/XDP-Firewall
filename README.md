@@ -1,4 +1,4 @@
-# Packet Malware Detection With XDP
+# Firewall With XDP
 본 소스코드는 XDP를 이용하여 두개의 NIC로 양방향 통신을 하는 환경에서 기본 패킷 필터링을 수행하는 프로그램이다. <br>
 패킷 필터링의 대상 프로토콜은 IPv4 기반의 TCP, UDP 프로토콜이다.
 
