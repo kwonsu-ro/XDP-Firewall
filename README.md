@@ -116,7 +116,7 @@ Successfully synchronized 5 rules and their indices.
 ```
 
 # 6. 테스트 방법
-테스트 방법은 다음과 갇다.
+테스트 방법은 다음과 같다.
 
 ## 6.1. Server
 트래픽이 유입되는지 확인하기 위하여 tcpdump를 실행한다.
