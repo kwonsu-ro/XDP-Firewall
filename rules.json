@@ -1,0 +1,64 @@
+{
+	"rules": [
+		{
+			"rule_id": 1,
+			"policy": "snat",
+			"proto": "tcp",
+			"descr": "ssh",
+			"saddr": "192.168.56.100~192.168.56.200",
+			"daddr": "192.168.215.9",
+			"sport": "0~65535",
+			"dport": 22,
+			"nat_ip": "192.168.215.8",
+			"nat_port": "0"
+		},
+		{
+			"rule_id": 2,
+			"policy": "dnat",
+			"proto": "udp",
+			"descr": "udp 서버",
+			"saddr": "192.168.215.9",
+			"daddr": "192.168.215.8",
+			"sport": "0~65535",
+			"dport": "56",
+			"nat_ip": "192.168.56.108",
+			"nat_port": "5656"
+		},
+		{
+			"rule_id": 3,
+			"policy": "snat",
+			"proto": "icmp",
+			"descr": "ping",
+			"saddr": "192.168.56.1~192.168.56.109",
+			"daddr": "192.168.215.9",
+			"sport": "0",
+			"dport": "0",
+			"nat_ip": "192.168.215.8",
+			"nat_port": "0"
+		},
+		{
+			"rule_id": 4,
+			"policy": "accept",
+			"proto": "icmp",
+			"descr": "drop icmp",
+			"saddr": "0.0.0.0",
+			"daddr": "192.168.215.9",
+			"sport": "0",
+			"dport": "0",
+			"nat_ip": "0.0.0.0",
+			"nat_port": "0"
+		},
+		{
+			"rule_id": 5,
+			"policy": "drop",
+			"proto": "all",
+			"descr": "all packet",
+			"saddr": "0.0.0.0",
+			"daddr": "0.0.0.0",
+			"sport": "0",
+			"dport": "0",
+			"nat_ip": "0.0.0.0",
+			"nat_port": "0"
+		}
+	]
+}
