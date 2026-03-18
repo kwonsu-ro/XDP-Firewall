@@ -9,7 +9,7 @@
 # 2. 네트워크 구성도
 네트워크 구성도는 다음과 같다.
 
-<img width="879" height="156" alt="Image" src="https://github.com/user-attachments/assets/43c1d90e-857c-4a13-808e-a7e439f0a52a" />
+<img width="1626" height="244" alt="Image" src="https://github.com/user-attachments/assets/79633cd5-8c3d-4d09-8c08-50562eacabe5" />
 
 위 그림과 같이 Client와 Server 사이에 XDP를 이용하여 enp0s3과 enp0s8 NIC 간의 양방향 통신을 하고 패킷 필터링을 수행힌다.</br>
 프로그램 실행 전 사용하는 환경에 맞게 NIC와 IP설정을 한다.
